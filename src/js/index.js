@@ -296,7 +296,7 @@ function handleBoardDragEnd(e) {
   const width = selectionRect.width;
   const height = selectionRect.height;
 
-  if (width >= 80 && height >= 80) {
+  if (width >= 32 && height >= 32) {
     const id = generateUUID();
     const memo = createMemo(id, null, { top, left }, { width, height });
     board.appendChild(memo);
